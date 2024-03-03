@@ -231,15 +231,56 @@ main {
     line-height: 0.5;
 }
 
-  
-/* Media query for screens with a width up to 375px (mobile) */
-@media (max-width: 375px) {
+
+/* Media query for screens with a width up to 375px (mobile) and up to 720px */
+@media (max-width: 720px) {
+    body {
+        max-width: 720px;
+        padding-top: 0;
+    }
+
     main {
-      flex-direction: column; /* Change layout to vertical stacking */
+        width: 100%; /* Set main to occupy entire width */
+        flex-direction: column; /* Change layout to vertical stacking */
     }
 
     #section1 {
-      order: 1; /* Place #section1 first in the stacking order */
+        order: 1; /* Place #section1 first in the stacking order */
+        width: 100%;
+        margin-bottom: 20px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    .circle {
+        margin-left: calc(50% - 100px); /* Center the circle */
+    }
+
+    #section2 {
+        order: 2; /* Place #section2 second in the stacking order */
+        width: 100%;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+}
+
+
+  
+/* Media query for screens with a width up to 375px (mobile)
+@media (max-width: 375px) {
+
+    body {
+      max-width: 375px;
+      padding: 0 0 0 0;
+    }
+
+    main {
+      width: 375px;
+      flex-direction: column;  Change layout to vertical stacking 
+    }
+
+    #section1 {
+      order: 1;  Place #section1 first in the stacking order 
       width: 100%;
       margin-bottom: 20px;
       border-top-left-radius: 0;
@@ -251,12 +292,44 @@ main {
     }
 
     #section2 {
-      order: 2; /* Place #section2 second in the stacking order */
+      order: 2;  Place #section2 second in the stacking order 
       width: 100%;
       border-top-left-radius: 0;
       border-top-right-radius: 0;
     }
 }
+
+ Media query for screens with a width up to 720px 
+@media (max-width: 720px) {
+    body {
+        max-width: 720px;
+        padding: 0 0 0 0;
+    }
+
+    main {
+        width: 720px;
+        flex-direction: column;  Change layout to vertical stacking 
+    }
+
+    #section1 {
+        order: 1;  Place #section1 first in the stacking order 
+        width: 100%;
+        margin-bottom: 20px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    .circle {
+        margin-left: 110px;  Adjust as needed 
+    }
+
+    #section2 {
+        order: 2;  Place #section2 second in the stacking order 
+        width: 100%;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+}*/
   
 footer {
     font-size: 16px; 
@@ -278,9 +351,9 @@ footer {
       monospace;
 }*/
   
-/* Media query for screens with a width up to 375px (mobile) */
+/* Media query for screens with a width up to 375px (mobile)
 @media (max-width: 375px) {
     body {
       padding-top: 0;
     }
-}
+}*/
