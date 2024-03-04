@@ -234,9 +234,16 @@ main {
 
 /* Media query for screens with a width up to 375px (mobile) and up to 720px */
 @media (max-width: 720px) {
+
+    body {
+        padding-left: 0;
+        padding-right: 0;
+    }    
+
     main {
         width: 86%;
         flex-direction: column; /* Change layout to vertical stacking */
+        padding-top: 0;
     }
 
     #section1 {
