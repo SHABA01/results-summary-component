@@ -235,7 +235,7 @@ main {
 /* Media query for screens with a width up to 375px (mobile) and up to 720px */
 @media (max-width: 720px) {
     body {
-        max-width: 290px;
+        max-width: 250px;
         padding-top: 0;
         padding-left: 50px;
         padding-right: 0;
