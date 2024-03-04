@@ -236,7 +236,7 @@ main {
 @media (max-width: 720px) {
 
     body {
-        width: 60px;
+        width: 70px;
         padding-top: 0;
         padding-left: 0;
         padding-right: 0;
@@ -245,7 +245,7 @@ main {
     }    
 
     main {
-        width: 60%;
+        width: 70%;
         flex-direction: column; /* Change layout to vertical stacking */
         padding: 0 0 0 0;
         margin: 0 0 0 0;
