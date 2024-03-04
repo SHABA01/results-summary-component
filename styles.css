@@ -235,14 +235,14 @@ main {
 /* Media query for screens with a width up to 375px (mobile) and up to 720px */
 @media (max-width: 720px) {
     body {
-        width: auto;
+        max-width: 250px;
         padding-top: 0;
         padding-left: 0;
         padding-right: 0;
     }
 
     main {
-        width: 70%;
+        width: 100%; /* Set main to occupy entire width */
         flex-direction: column; /* Change layout to vertical stacking */
     }
 
