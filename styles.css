@@ -235,10 +235,10 @@ main {
 /* Media query for screens with a width up to 375px (mobile) and up to 720px */
 @media (max-width: 720px) {
     body {
-        max-width: 250px;
+        width: auto;
         padding-top: 0;
-        padding-left: 70px;
-        padding-right: 70px;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     main {
@@ -248,7 +248,7 @@ main {
 
     #section1 {
         order: 1; /* Place #section1 first in the stacking order */
-        width: 100%;
+        width: auto;
         margin-bottom: 20px;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
