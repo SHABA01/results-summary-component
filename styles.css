@@ -237,8 +237,8 @@ main {
     body {
         max-width: 250px;
         padding-top: 0;
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 50px;
+        padding-right: 50px;
     }
 
     main {
