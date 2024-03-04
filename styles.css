@@ -242,7 +242,7 @@ main {
     }
 
     main {
-        width: 100%; /* Set main to occupy entire width */
+        width: auto;
         flex-direction: column; /* Change layout to vertical stacking */
     }
 
