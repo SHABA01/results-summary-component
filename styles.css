@@ -278,6 +278,10 @@ main {
         border-top-right-radius: 0;
     }
 
+    .spacer {
+        width: 150px;
+    }
+
     footer {
         font-size: 10px;
         width: 100%;
