@@ -260,7 +260,7 @@ main {
 
     #section1 {
         order: 1; /* Place #section1 first in the stacking order */
-        width: 350px;
+        width: 340px;
         margin-bottom: 20px;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
