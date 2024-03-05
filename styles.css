@@ -278,77 +278,11 @@ main {
     footer {
         font-size: 10px;
         width: 100%;
-        top: 150px;
+        top: 10px;
+        /*top: 150px;*/
     }
 }
 
-
-  
-/* Media query for screens with a width up to 375px (mobile)
-@media (max-width: 375px) {
-
-    body {
-      max-width: 375px;
-      padding: 0 0 0 0;
-    }
-
-    main {
-      width: 375px;
-      flex-direction: column;  Change layout to vertical stacking 
-    }
-
-    #section1 {
-      order: 1;  Place #section1 first in the stacking order 
-      width: 100%;
-      margin-bottom: 20px;
-      border-top-left-radius: 0;
-      border-top-right-radius: 0;
-    }
-
-    .circle {
-      margin-left: 110px;
-    }
-
-    #section2 {
-      order: 2;  Place #section2 second in the stacking order 
-      width: 100%;
-      border-top-left-radius: 0;
-      border-top-right-radius: 0;
-    }
-}
-
- Media query for screens with a width up to 720px 
-@media (max-width: 720px) {
-    body {
-        max-width: 720px;
-        padding: 0 0 0 0;
-    }
-
-    main {
-        width: 720px;
-        flex-direction: column;  Change layout to vertical stacking 
-    }
-
-    #section1 {
-        order: 1;  Place #section1 first in the stacking order 
-        width: 100%;
-        margin-bottom: 20px;
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-    }
-
-    .circle {
-        margin-left: 110px;  Adjust as needed 
-    }
-
-    #section2 {
-        order: 2;  Place #section2 second in the stacking order 
-        width: 100%;
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-    }
-}*/
-  
 footer {
     font-size: 16px; 
     text-align: center;
@@ -363,15 +297,3 @@ footer {
       color: hsl(234, 85%, 45%);
     }
 }
-  
-/*code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-      monospace;
-}*/
-  
-/* Media query for screens with a width up to 375px (mobile)
-@media (max-width: 375px) {
-    body {
-      padding-top: 0;
-    }
-}*/
