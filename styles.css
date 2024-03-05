@@ -250,7 +250,7 @@ main {
     }    
 
     main {
-        width: 100%;
+        width: auto;
         flex-direction: column; /* Change layout to vertical stacking */
         padding: 0 0 0 0;
         margin: 0 0 0 0;
@@ -259,7 +259,7 @@ main {
 
     #section1 {
         order: 1; /* Place #section1 first in the stacking order */
-        width: 100%;
+        width: auto;
         margin-bottom: 20px;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
@@ -271,7 +271,7 @@ main {
 
     #section2 {
         order: 2; /* Place #section2 second in the stacking order */
-        width: 100%;
+        width: auto;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
     }
