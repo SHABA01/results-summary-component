@@ -237,7 +237,7 @@ main {
 
     html, body {
         max-width: 720px;
-        overflow-x: hidden;
+        /*overflow-x: hidden;*/
     }
 
     body {
