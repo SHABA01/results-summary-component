@@ -250,6 +250,7 @@ main {
     }    
 
     main {
+        border: 1px solid #000; /* 1px solid black border */
         width: auto;
         flex-direction: column; /* Change layout to vertical stacking */
         padding: 0 0 0 0;
@@ -270,6 +271,7 @@ main {
     }
 
     #section2 {
+        border: 1px solid #000; /* 1px solid black border */
         order: 2; /* Place #section2 second in the stacking order */
         width: auto;
         border-top-left-radius: 0;
