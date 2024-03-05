@@ -235,13 +235,11 @@ main {
 /* Media query for screens with a width up to 375px (mobile) and up to 720px */
 @media (max-width: 720px) {
 
-    html, body {
+    /*html, body {
         max-width: 720px;
-        /*overflow-x: hidden;*/
-    }
+    }*/
 
     body {
-        /*width: 400px;*/
         padding-top: 0;
         padding-left: 0;
         padding-right: 0;
@@ -279,7 +277,8 @@ main {
     }
 
     .spacer {
-        width: 10px;
+        /*width: 10px;*/
+        width: 15px;
     }
 
     footer {
