@@ -254,7 +254,7 @@ main {
 
     #section1 {
         order: 1; /* Place #section1 first in the stacking order */
-        width: 325px;
+        width: 323px;
         margin-bottom: 20px;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
@@ -266,7 +266,7 @@ main {
 
     #section2 {
         order: 2; /* Place #section2 second in the stacking order */
-        width: 325px;
+        width: 323px;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
     }
@@ -278,11 +278,11 @@ main {
     footer {
         font-size: 10px;
         width: 100%;
-        margin-top: 0;
+        top: 0;
         /*top: 150px;*/
         text-align: center;
         position: relative;
-        bottom: 0;
+        margin-bottom: 150px;
         left: 0;
         right: 0; 
         padding: /* top */ 0px /* right */ 0 /* bottom */ 0 /* left */ 0;
