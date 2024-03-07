@@ -50,7 +50,7 @@ function replaceTextOnScreenSize() {
     // Check if screen size is less than or equal to 720px
     if (window.matchMedia("(max-width: 720px)").matches) {
       // Select the <p> element
-      var pElement = document.querySelector(".p3");
+      var pElement = document.querySelector("p3");
       // Replace its text content
       pElement.textContent = "You scored higher than 65% of the\npeople who have taken these tests.";
     }
