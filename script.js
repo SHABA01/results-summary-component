@@ -16,9 +16,9 @@ function renderApp(data) {
                   <p class="p2"> of 100</p>
               </div>
               <p class="txt-great">Great</p>
-              
-              <p class="p3"></p>
-
+              <p class="p3">You scored higher than 65% of</p>
+              <p class="p3">the people who have taken</p>
+              <p class="p3">these tests.</p>
           </section>
           <section id="section2">
               <h2>Summary</h2>
@@ -44,6 +44,24 @@ function renderApp(data) {
   const continueButton = document.getElementById('continueButton');
   continueButton.addEventListener('click', handleContinueButtonClick);
 }
+
+// Function to check screen size and replace text content
+function replaceTextOnScreenSize() {
+    // Check if screen size is less than or equal to 720px
+    if (window.matchMedia("(max-width: 720px)").matches) {
+      // Select the <p> element
+      var pElement = document.querySelector(".p3");
+      // Replace its text content
+      pElement.textContent = "You scored higher than 65% of the\npeople who have taken these tests.";
+    }
+  }
+  
+  // Call the function initially to handle page load
+  replaceTextOnScreenSize();
+  
+  // Add event listener for window resize to handle changes in screen size
+  window.addEventListener("resize", replaceTextOnScreenSize);
+  
 
 function handleContinueButtonClick() {
   const userConfirmed = confirm("Do you want to go on to the next set of tests or retake the previous ones?");

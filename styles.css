@@ -246,25 +246,6 @@ footer {
     }
 }
 
-/* Media query for screens with a widtth more than 720px */
-@media (min-width: 721px) {
-
-    /*.p3 {
-        content: "You scored higher than 65% of";
-        display: block;
-    }
-
-    .p3 {
-        content: "the people who have taken";
-        display: block;
-    }
-
-    .p3 {
-        content: "these tests.";
-        display: block;
-    }*/
-}
-
 /* Media query for screens with a width up to 375px (mobile) and up to 720px */
 @media (max-width: 720px) {
 
@@ -291,16 +272,6 @@ footer {
         margin-bottom: 20px;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
-    }
-
-    .p3 {
-        content: "You scored higher than 65% of the";
-        display: block;
-    }
-
-    .p3 {
-        content: "people who have taken these tests.";
-        display: block;
     }
       
     .circle {
