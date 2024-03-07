@@ -16,10 +16,9 @@ function renderApp(data) {
                   <p class="p2"> of 100</p>
               </div>
               <p class="txt-great">Great</p>
+              
               <p class="p3"></p>
-              /*<p class="p3">You scored higher than 65% of</p>
-              <p class="p3">the people who have taken</p>
-              <p class="p3">these tests.</p>*/
+
           </section>
           <section id="section2">
               <h2>Summary</h2>
