@@ -274,10 +274,18 @@ footer {
         border-top-right-radius: 0;
     }
 
-    .p3 {
+    .p3::before {
+        content: "You scored higher than 65% of";
+        white-space: pre;
         display: block;
-    }
+      }
 
+    .p3::after {
+        content: "\Athe people who have taken\nthese tests.";
+        white-space: pre;
+        display: block;
+      }
+      
     .circle {
         margin-left: calc(50% - 100px); /* Center the circle */
     }
