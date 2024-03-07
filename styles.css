@@ -274,7 +274,12 @@ footer {
         border-top-right-radius: 0;
     }
 
-    .p3 {
+    .p3::before,
+    .p3::after {
+        content: none;
+    }
+
+    .p3::before {
         content: "You scored higher than 65% of the";
         display: block;
     }
