@@ -274,6 +274,10 @@ footer {
         border-top-right-radius: 0;
     }
 
+    .p3 {
+        display: block;
+    }
+
     .circle {
         margin-left: calc(50% - 100px); /* Center the circle */
     }
