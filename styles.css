@@ -231,20 +231,7 @@ main {
     line-height: 0.5;
 }
 
-footer {
-    font-size: 16px; 
-    text-align: center;
-    position: relative;
-    top: 70px;
-    bottom: 0;
-    left: 0;
-    right: 0; 
-    padding: /* top */ 0px /* right */ 0 /* bottom */ 0 /* left */ 0;
-    color: hsl(0, 0%, 7%);
-    a {
-      color: hsl(234, 85%, 45%);
-    }
-}
+
 
 /* Media query for screens with a width up to 375px (mobile) and up to 720px */
 @media (max-width: 720px) {
@@ -290,7 +277,7 @@ footer {
         width: 105px;
     }
 
-    footer {
+    /*footer {
         font-size: 16px;
         text-align: center;
         position: relative;
@@ -298,6 +285,21 @@ footer {
         bottom: 0;
         left: 0;
         right: 0; 
-        padding: /* top */ 0px /* right */ 0 /* bottom */ 20px /* left */ 0;
+        padding: /* top  0px /* right  0 /* bottom  20px /* left  0;
+    }*/
+}
+
+footer {
+    font-size: 16px; 
+    text-align: center;
+    position: relative;
+    top: 70px;
+    bottom: 0;
+    left: 0;
+    right: 0; 
+    padding: /* top */ 0px /* right */ 0 /* bottom */ 20px /* left */ 0;
+    color: hsl(0, 0%, 7%);
+    a {
+      color: hsl(234, 85%, 45%);
     }
 }
