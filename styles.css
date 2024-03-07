@@ -274,7 +274,7 @@ footer {
         border-top-right-radius: 0;
     }
 
-    .p3::before,
+    /*.p3::before,
     .p3::after {
         content: none;
     }
@@ -287,6 +287,10 @@ footer {
     .p3::after {
         content: "people who have taken these tests.";
         display: block;
+    }*/
+
+    .p3 {
+        line-height: 0.2;
     }
       
     .circle {
