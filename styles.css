@@ -275,10 +275,6 @@ footer {
     }
 
     .p3 {
-        content: none;
-    }
-
-    .p3::before {
         content: "You scored higher than 65% of the";
         display: block;
     }
