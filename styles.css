@@ -275,13 +275,13 @@ footer {
     }
 
     .p3::before {
-        content: "You scored higher than 65% of";
+        content: "You scored higher than 65% of the";
         white-space: pre;
         display: block;
       }
 
     .p3::after {
-        content: "\Athe people who have taken\nthese tests.";
+        content: "\Apeople who have taken these tests.";
         white-space: pre;
         display: block;
       }
