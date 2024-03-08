@@ -1,70 +1,131 @@
-# Getting Started with Create React App
+# Frontend Mentor - Results summary component solution
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a solution to the [Results summary component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-### `npm start`
+## Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### The challenge
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Users should be able to:
 
-### `npm test`
+- View the optimal layout for the interface depending on their device's screen size
+- See hover and focus states for all interactive elements on the page
+- **Bonus**: Use the local JSON data to dynamically populate the content
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Screenshot
 
-### `npm run build`
+                                                      Desktop view
+![results-summary-component-screenshot.png](./assets/images/results-summary-component-screenshot.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+                                                      Mobile view
+![results-summary-component-mobile-screenshot.jpg](./assets/images/results-summary-component-mobile-screenshot.jpg)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Links
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [Solution URL](https://github.com/SHABA01/results-summary-component)
+- [Live Site URL](https://shaba01.github.io/results-summary-component)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## My process
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Built with
 
-## Learn More
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- Vanilla JavaScript
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### What I learnt
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+One of the key things I learnt from this project was the use of `mainDiv.innerHTML` method, in conjunction with template literals and dynamic data manipulation, showcases an effective approach to dynamically generating and rendering HTML content within a web application.
 
-### Code Splitting
+```javascript
+ function renderApp(data) {
+  const mainDiv = document.getElementById('main');
+  mainDiv.innerHTML = `
+      <main>
+          <section id="section1">
+              <h1>Your Result</h1>
+              <div class="circle">
+                  <p class="p1">76</p>
+                  <p class="p2"> of 100</p>
+              </div>
+              <p class="txt-great">Great</p>
+              <p class="p3">You scored higher than 65% of</p>
+              <p class="p3">the people who have taken</p>
+              <p class="p3">these tests.</p>
+          </section>
+          <section id="section2">
+              <h2>Summary</h2>
+              ${data.map(category => `
+                  <div class="div-${category.category.toLowerCase()}">
+                      <div class="icon-and-text">
+                          <img src="${category.icon}" alt="${category.category} icon" class="icon-${category.category.toLowerCase()}" />
+                          <p class="txt-${category.category.toLowerCase()}">${category.category}</p>
+                      </div>
+                      <div class="spacer"></div>
+                      <div class="scores">
+                          <p class="score">${category.score}</p>
+                          <div class="spacer2"></div>
+                          <p class="score-out-of">/ 100</p>
+                      </div>
+                  </div>
+              `).join('')}
+              <button id="continueButton">Continue</button>
+          </section>
+      </main>
+  `;
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+  const continueButton = document.getElementById('continueButton');
+  continueButton.addEventListener('click', handleContinueButtonClick);
+}
+```
+I also learnt:
 
-### Analyzing the Bundle Size
+ 1. __Dynamic HTML Generation:__ The `mainDiv.innerHTML` method is utilized to dynamically generate the HTML content of the mainDiv element. This allows for the insertion of dynamic data fetched from the `data` parameter.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+ 2. __Template Literal Usage:__ Template literals (enclosed in backticks ``) are used for creating multi-line strings, making the HTML structure more readable and maintainable within the JavaScript code.
+ 
+ 3. __Data Interpolation:__ The `${}` syntax within the template literals allows for easy interpolation of dynamic data values, such as `category.category`, `category.icon`, and `category.score`. This enables the insertion of category-specific data retrieved from the `data` array.
+ 
+ 4. __Array Mapping:__ The `data.map()` function is used to iterate over each object in the `data` array and dynamically generate HTML markup for each category. This demonstrates the flexibility of JavaScript's array manipulation methods for generating dynamic content.
+ 
+ 5. __Event Binding:__ Additionally, the `addEventListener` method is employed to bind an event listener to the `continueButton`, enabling interaction with the dynamically generated content.
+ 
+ 6. __Code Readability and Maintainability:__ By encapsulating the HTML structure within the JavaScript code using template literals, the readability and maintainability of the code are enhanced, as it becomes easier to visualize and modify the structure of the generated HTML.
 
-### Making a Progressive Web App
+### Continued development
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+I plan to continue improving my skills in accessibility, ensuring that the results-summary-component is usable and navigable for all users. Additionally, I aim to explore more advanced CSS techniques for creating responsive and visually appealing interfaces.
 
-### Advanced Configuration
+### Useful resources
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- [MDN Web Docs](https://developer.mozilla.org/en-US) - This comprehensive resource for HTML, CSS, and JavaScript documentation helped me to understand the relationship between linked files and how to reference elements across each file.
 
-### Deployment
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- LinkedIn - [Philip Shaba](https://www.linkedin.com/in/philip-shaba-0879a5150)
+- Frontend Mentor - [@SHABA01](https://www.frontendmentor.io/profile/SHABA01)
+- X - [@ShabaPhilip1](https://www.twitter.com/ShabaPhilip1)
 
-### `npm run build` fails to minify
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+I would like to acknowledge the Frontend Mentor community for providing this challenge and the resources that helped me enhance my skills during this project.
