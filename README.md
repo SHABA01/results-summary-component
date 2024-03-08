@@ -11,6 +11,7 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
+  - [Extra Feature](#extra-feature)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
@@ -111,6 +112,25 @@ I also learnt:
  5. __Event Binding:__ Additionally, the `addEventListener` method is employed to bind an event listener to the `continueButton`, enabling interaction with the dynamically generated content.
  
  6. __Code Readability and Maintainability:__ By encapsulating the HTML structure within the JavaScript code using template literals, the readability and maintainability of the code are enhanced, as it becomes easier to visualize and modify the structure of the generated HTML.
+
+### Extra Feature
+
+__User Confirmation Prompt__
+
+In addition to rendering the application interface, an extra feature has been implemented to enhance user interaction. Upon clicking the "Continue" button, a confirmation prompt is triggered, giving users the option to proceed to the next set of tests or to retake the previous ones. This feature provides users with control over their testing experience and ensures clarity before advancing.
+
+```javascript
+ function handleContinueButtonClick() {
+  const userConfirmed = confirm("Do you want to go on to the next set of tests or retake the previous ones?");
+
+  if (userConfirmed) {
+      console.log("User confirmed. Proceeding to the next set of tests...");
+  } else {
+      console.log("User canceled. Staying on the current set of tests...");
+  }
+}
+```
+When the user clicks the "Continue" button, a confirmation dialog appears, presenting the options. If the user confirms their choice, a corresponding message is logged to the console, indicating the decision made. Conversely, if the user cancels, the application maintains the current set of tests, providing a seamless experience tailored to user preferences. This extra feature adds a layer of interactivity and user control, enriching the overall usability of the application.
 
 ### Continued development
 
