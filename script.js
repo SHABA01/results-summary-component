@@ -46,7 +46,7 @@ function renderApp(data) {
 }
 
 // Function to check screen size and replace text content
-function replaceTextOnScreenSize() {
+/*function replaceTextOnScreenSize() {
     // Check if screen size is less than or equal to 720px
     if (window.matchMedia("(max-width: 720px)").matches) {
       // Select the <p> element
@@ -60,7 +60,7 @@ function replaceTextOnScreenSize() {
   replaceTextOnScreenSize();
   
   // Add event listener for window resize to handle changes in screen size
-  window.addEventListener("resize", replaceTextOnScreenSize);
+  window.addEventListener("resize", replaceTextOnScreenSize);*/
   
 
 function handleContinueButtonClick() {
